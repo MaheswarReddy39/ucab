@@ -66,4 +66,4 @@ driverSchema.index({
   location: "2dsphere",
 });
 
-module.exports = mongoose.model("Driver", driverSchema);
+module.exports = mongoose.models.driver || mongoose.model("driver", driverSchema);
