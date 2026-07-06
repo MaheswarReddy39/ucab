@@ -1,4 +1,4 @@
-const Driver = require("../models/Driver");
+const Driver = require("../models/driver");
 const bcrypt = require("bcryptjs");
 const validator = require("validator");
 const jwt = require("jsonwebtoken");
