@@ -25,7 +25,7 @@ function Register() {
 
     try {
       await axios.post(
-        "http://localhost:5000/api/auth/register",
+        "http://ucab-btvg.onrender.com/api/auth/register",
         formData
       );
 

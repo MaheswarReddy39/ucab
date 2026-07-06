@@ -17,7 +17,7 @@ function MyBookings() {
       const token = localStorage.getItem("token");
 
       const res = await axios.get(
-        "http://localhost:5000/api/rides/my-rides",
+        "http://ucab-btvg.onrender.com/api/rides/my-rides",
         {
           headers: {
             Authorization: `Bearer ${token}`,

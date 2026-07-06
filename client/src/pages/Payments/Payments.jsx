@@ -18,7 +18,7 @@ function Payments() {
 
     try {
       await axios.post(
-        "http://localhost:5000/api/payment/pay",
+        "http://ucab-btvg.onrender.com/api/payment/pay",
         {
           rideId: ride._id,
           paymentMethod,

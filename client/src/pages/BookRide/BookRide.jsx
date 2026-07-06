@@ -86,7 +86,7 @@ function BookRide() {
 
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/rides/book",
+        "http://ucab-btvg.onrender.com/api/rides/book",
         {
           pickupLocation: `${pickupArea}, ${pickupCity}`,
           dropLocation: `${dropArea}, ${dropCity}`,

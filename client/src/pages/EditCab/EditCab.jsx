@@ -27,7 +27,7 @@ function EditCab() {
   const fetchCab = async () => {
     try {
       const res = await axios.get(
-        `http://localhost:5000/api/cabs/${id}`
+        `http://ucab-btvg.onrender.com/api/cabs/${id}`
       );
 
       setCab(res.data.cab);
@@ -63,7 +63,7 @@ function EditCab() {
       }
 
       await axios.put(
-        `http://localhost:5000/api/cabs/${id}`,
+        `http://ucab-btvg.onrender.com/api/cabs/${id}`,
         formData,
         {
           headers: {

@@ -18,7 +18,7 @@ function Users() {
             const token=localStorage.getItem("token");
 
             const res=await axios.get(
-                "http://localhost:5000/api/admin/users",
+                "http://ucab-btvg.onrender.com/api/admin/users",
                 {
                     headers:{
                         Authorization:`Bearer ${token}`
@@ -44,7 +44,7 @@ function Users() {
             const token=localStorage.getItem("token");
 
             await axios.delete(
-                `http://localhost:5000/api/admin/users/${id}`,
+                `http://ucab-btvg.onrender.com/api/admin/users/${id}`,
                 {
                     headers:{
                         Authorization:`Bearer ${token}`

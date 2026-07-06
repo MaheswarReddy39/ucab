@@ -14,7 +14,7 @@ function CabCard({ cab }) {
   const imageUrl =
     cab.image?.startsWith("http")
       ? cab.image
-      : `http://localhost:5000${cab.image}`;
+      : `http://ucab-btvg.onrender.com${cab.image}`;
 
   return (
 

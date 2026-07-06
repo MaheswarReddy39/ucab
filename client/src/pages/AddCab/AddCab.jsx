@@ -47,7 +47,7 @@ function AddCab() {
       }
 
       await axios.post(
-        "http://localhost:5000/api/cabs/add",
+        "http://ucab-btvg.onrender.com/api/cabs/add",
         formData,
         {
           headers: {

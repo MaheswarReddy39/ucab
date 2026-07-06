@@ -10,7 +10,7 @@ function Home() {
   useEffect(() => {
     const fetchCabs = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/cabs");
+        const res = await axios.get("http://ucab-btvg.onrender.com/api/cabs");
         setCabs(res.data.cabs);
       } catch (err) {
         console.log(err);
