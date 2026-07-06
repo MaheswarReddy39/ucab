@@ -1,0 +1,182 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.hero{
+    min-height:90vh;
+    background:#111827;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    padding:60px 8%;
+    color:white;
+    flex-wrap:wrap;
+}
+
+.hero-left{
+    width:500px;
+}
+
+.hero-left h1{
+    font-size:60px;
+    line-height:1.2;
+    margin-bottom:20px;
+}
+
+.hero-left p{
+    color:#d1d5db;
+    font-size:20px;
+    line-height:1.7;
+    margin-bottom:35px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:20px;
+}
+
+.book-btn{
+    background:#ff7a00;
+    color:white;
+    border:none;
+    padding:15px 35px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:18px;
+}
+
+.learn-btn{
+    background:transparent;
+    border:2px solid white;
+    color:white;
+    padding:15px 35px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:18px;
+}
+
+.booking-card{
+    width:380px;
+    background:white;
+    color:black;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.3);
+}
+
+.booking-card h2{
+    margin-bottom:25px;
+    text-align:center;
+}
+
+.booking-card input,
+.booking-card select{
+    width:100%;
+    padding:14px;
+    margin-bottom:18px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+}
+
+.booking-card button{
+    width:100%;
+    padding:15px;
+    background:#ff7a00;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:18px;
+}
+
+.booking-card button:hover,
+.book-btn:hover{
+    background:#e86d00;
+}
+
+.learn-btn:hover{
+    background:white;
+    color:#000000;
+}
+
+.cabs{
+    padding:80px 8%;
+    background:#f8fafc;
+    text-align:center;
+}
+
+.cabs h2{
+    font-size:42px;
+    margin-bottom:50px;
+}
+
+.cab-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.cab-card{
+    width:300px;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.cab-card:hover{
+    transform:translateY(-10px);
+}
+
+.cab-icon{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.cab-card h3{
+    margin-bottom:10px;
+    font-size:28px;
+}
+
+.cab-card p{
+    color:#555;
+    margin-bottom:20px;
+}
+
+.cab-card h4{
+    color:#ff7a00;
+    font-size:30px;
+    margin-bottom:20px;
+}
+
+.cab-card button{
+    width:100%;
+    padding:15px;
+    border:none;
+    background:#ff7a00;
+    color:white;
+    border-radius:8px;
+    font-size:18px;
+    cursor:pointer;
+}
+
+.cab-card button:hover{
+    background:#e86d00;
+}
+.container{
+    padding:40px;
+    max-width:1400px;
+    margin:auto;
+}
+
+.cards{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+}

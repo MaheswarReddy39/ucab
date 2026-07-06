@@ -1,0 +1,35 @@
+.cab-card{
+    width:300px;
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,.2);
+}
+
+.cab-image{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.cab-card-body{
+    padding:15px;
+}
+
+.cab-card-body h3{
+    margin-bottom:10px;
+}
+
+.cab-card-body p{
+    margin:8px 0;
+}
+
+.book-btn{
+    width:100%;
+    padding:12px;
+    background:#ff9800;
+    border:none;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+}

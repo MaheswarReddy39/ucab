@@ -1,0 +1,41 @@
+body{
+    background:#fff7da;
+}
+
+.track-container{
+    display:flex;
+    gap:30px;
+    padding:40px;
+}
+
+.map{
+    flex:2;
+}
+
+.map img{
+    width:100%;
+    border-radius:15px;
+}
+
+.ride-info{
+    flex:1;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 0 10px rgba(0,0,0,.2);
+}
+
+.ride-info p{
+    margin:15px 0;
+}
+
+.ride-info button{
+    width:100%;
+    padding:12px;
+    border:none;
+    background:orange;
+    color:white;
+    border-radius:8px;
+    font-size:18px;
+    cursor:pointer;
+}

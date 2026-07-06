@@ -1,0 +1,162 @@
+.cab-page {
+  min-height: 100vh;
+  background: #fff7dc;
+  padding: 40px;
+}
+
+.cab-page h1 {
+  text-align: center;
+  font-size: 45px;
+  color: #222;
+  margin-bottom: 35px;
+}
+
+/* Search */
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.search-box input {
+  width: 240px;
+  padding: 13px 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  font-size: 15px;
+  transition: .3s;
+}
+
+.search-box input:focus {
+  border-color: orange;
+  box-shadow: 0 0 8px rgba(255,166,0,.25);
+}
+
+.sort-btn {
+  background: orange;
+  color: black;
+  border: none;
+  padding: 13px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: .3s;
+}
+
+.sort-btn:hover {
+  background: #ff9800;
+  transform: translateY(-2px);
+}
+
+/* Cards */
+
+.cab-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px,1fr));
+  gap: 30px;
+}
+
+.cab-card {
+  background: #ffe89c;
+  border-radius: 15px;
+  padding: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,.12);
+  transition: .35s;
+}
+
+.cab-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 35px rgba(0,0,0,.18);
+}
+
+.cab-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 18px;
+}
+
+.cab-card h3 {
+  text-align: center;
+  margin-bottom: 14px;
+  color: #222;
+  font-size: 18px;
+}
+
+.cab-card p {
+  margin: 10px 0;
+  text-align: center;
+  color: #333;
+  font-size: 16px;
+}
+
+.cab-card p b {
+  color: black;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.edit-btn,
+.delete-btn {
+  width: 47%;
+  border: none;
+  padding: 12px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: .3s;
+}
+
+.edit-btn {
+  background: black;
+  color: white;
+}
+
+.edit-btn:hover {
+  background: #222;
+}
+
+.delete-btn {
+  background: red;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: darkred;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+  .cab-page{
+    padding:20px;
+  }
+
+  .cab-page h1{
+    font-size:34px;
+  }
+
+  .search-box{
+    flex-direction:column;
+  }
+
+  .search-box input{
+    width:100%;
+  }
+
+  .sort-btn{
+    width:100%;
+  }
+
+}

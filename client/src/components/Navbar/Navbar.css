@@ -1,0 +1,23 @@
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:18px 60px;
+  background:#ffb300;
+}
+
+.logo{
+  font-size:30px;
+  font-weight:bold;
+}
+
+.nav-links{
+  display:flex;
+  gap:30px;
+}
+
+.nav-links a{
+  text-decoration:none;
+  color:black;
+  font-weight:600;
+}

@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.book-page {
+  min-height: 100vh;
+  background: #fff6d8;
+}
+
+.book-container {
+  width: 900px;
+  margin: 40px auto;
+  background: #fffdf6;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.book-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 38px;
+}
+
+.book-container h3 {
+  text-align: center;
+  color: #f59e0b;
+  margin: 25px 0 15px;
+}
+
+.location-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.location-row select,
+.location-row input {
+  flex: 1;
+}
+
+.book-container input,
+.book-container select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+}
+
+.book-container label {
+  display: block;
+  text-align: center;
+  color: #f59e0b;
+  font-weight: bold;
+  margin: 18px 0 8px;
+}
+
+.book-container button {
+  width: 100%;
+  padding: 13px;
+  margin-top: 18px;
+  border: none;
+  border-radius: 6px;
+  background: orange;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.book-container button:hover {
+  background: #e68a00;
+}
+
+.fare-box {
+  margin-top: 25px;
+  background: #fff7e6;
+  border: 2px solid orange;
+  border-radius: 8px;
+  padding: 18px;
+  text-align: center;
+}
+
+.fare-box h2 {
+  color: #ff9800;
+  margin-bottom: 10px;
+}
+
+.fare-box p {
+  font-size: 18px;
+  margin: 8px 0;
+}
+
+@media (max-width: 950px) {
+  .book-container {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .location-row {
+    flex-direction: column;
+  }
+
+  .book-container h1 {
+    font-size: 30px;
+  }
+}

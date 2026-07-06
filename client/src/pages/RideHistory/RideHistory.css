@@ -1,0 +1,32 @@
+body{
+    background:#fff7da;
+}
+
+.history-container{
+    padding:40px;
+}
+
+.history-container h1{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.ride-card{
+    width:450px;
+    margin:auto;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 0 10px rgba(0,0,0,.2);
+}
+
+.ride-card p{
+    margin:12px 0;
+    font-size:18px;
+}
+
+.ride-card h3{
+    color:green;
+    margin-top:15px;
+    text-align:center;
+}
