@@ -1,5 +1,5 @@
 const Ride = require("../models/Ride");
-const Driver = require("../models/Driver");
+const Driver = require("../models/driver");
 const Cab = require("../models/Cab");
 
 const bookRide = async (req, res) => {
