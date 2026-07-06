@@ -1,5 +1,5 @@
 const User = require("../models/User");
-const Driver = require("../models/Driver");
+const Driver = require("../models/driver");
 const Ride = require("../models/Ride");
 const Cab = require("../models/Cab");
 
