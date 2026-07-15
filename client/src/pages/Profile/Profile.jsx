@@ -18,7 +18,7 @@ function Profile() {
       const token = localStorage.getItem("token");
 
       const res = await axios.get(
-        "http://ucab-btvg.onrender.com/api/auth/profile",
+        "http://localhost:5000/api/auth/profile",
         {
           headers: {
             Authorization: `Bearer ${token}`,

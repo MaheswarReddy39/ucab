@@ -28,7 +28,7 @@ function AdminDashboard() {
       const token = localStorage.getItem("token");
 
       const res = await axios.get(
-        "http://ucab-btvg.onrender.com/api/admin/dashboard",
+        "http://localhost:5000/api/admin/dashboard",
         {
           headers: {
             Authorization: `Bearer ${token}`,

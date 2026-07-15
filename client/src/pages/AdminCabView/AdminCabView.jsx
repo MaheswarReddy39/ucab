@@ -26,7 +26,7 @@ function AdminCabView() {
   const fetchCabs = async () => {
     try {
       const res = await axios.get(
-        "http://ucab-btvg.onrender.com/api/cabs"
+        "http://localhost:5000/api/cabs"
       );
 
       setCabs(res.data.cabs);
@@ -84,7 +84,7 @@ function AdminCabView() {
     try {
 
       await axios.delete(
-        `http://ucab-btvg.onrender.com/api/cabs/${id}`
+        `http://localhost:5000/api/cabs/${id}`
       );
 
       alert("Cab Deleted");
@@ -147,7 +147,7 @@ function AdminCabView() {
                 src={
                   cab.image.startsWith("http")
                     ? cab.image
-                    : `http://ucab-btvg.onrender.com/uploads/${cab.image}`
+                    : `http://localhost:5000/uploads/${cab.image}`
                 }
                 alt={cab.name}
               />
