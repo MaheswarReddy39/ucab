@@ -1,2 +1,8 @@
 node_modules
 .env
+.env.*
+!.env.example
+
+# Uploaded cab images (keep the Multer config)
+uploads/*
+!uploads/upload.js
