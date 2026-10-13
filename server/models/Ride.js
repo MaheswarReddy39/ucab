@@ -10,7 +10,7 @@ const rideSchema = new mongoose.Schema(
 
     driver: {
       type: mongoose.Schema.Types.ObjectId,
-      ref: "Driver",
+      ref: "driver",
       default: null,
     },
     cab: {
@@ -54,7 +54,7 @@ const rideSchema = new mongoose.Schema(
     rejectedDrivers: [
       {
         type: mongoose.Schema.Types.ObjectId,
-        ref: "Driver",
+        ref: "driver",
       },
     ],
     paymentMethod: {

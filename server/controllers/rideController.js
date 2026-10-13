@@ -220,6 +220,13 @@ const startRide = async (req, res) => {
       });
     }
 
+    if (!ride.driver || ride.driver.toString() !== req.user.id) {
+      return res.status(403).json({
+        success: false,
+        message: "This ride is not assigned to you",
+      });
+    }
+
     if (ride.status !== "accepted") {
       return res.status(400).json({
         success: false,
@@ -260,6 +267,13 @@ const completeRide = async (req, res) => {
       });
     }
 
+    if (!ride.driver || ride.driver.toString() !== req.user.id) {
+      return res.status(403).json({
+        success: false,
+        message: "This ride is not assigned to you",
+      });
+    }
+
     if (ride.status !== "started") {
       return res.status(400).json({
         success: false,
@@ -297,6 +311,13 @@ const rejectRide = async (req, res) => {
       return res.status(404).json({
         success: false,
         message: "Ride not found",
+      });
+    }
+
+    if (!ride.driver || ride.driver.toString() !== req.user.id) {
+      return res.status(403).json({
+        success: false,
+        message: "This ride is not assigned to you",
       });
     }
 

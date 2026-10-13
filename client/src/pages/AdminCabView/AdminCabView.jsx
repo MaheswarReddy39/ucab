@@ -84,7 +84,12 @@ function AdminCabView() {
     try {
 
       await axios.delete(
-        `http://localhost:5000/api/cabs/${id}`
+        `http://localhost:5000/api/cabs/${id}`,
+        {
+          headers: {
+            Authorization: `Bearer ${localStorage.getItem("token")}`,
+          },
+        }
       );
 
       alert("Cab Deleted");

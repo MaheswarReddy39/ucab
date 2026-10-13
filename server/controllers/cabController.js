@@ -78,7 +78,13 @@ const getSingleCab = async (req, res) => {
 // Update Cab
 const updateCab = async (req, res) => {
   try {
-    const cab = await Cab.findByIdAndUpdate(req.params.id, req.body, {
+    const updates = { ...req.body };
+
+    if (req.file) {
+      updates.image = req.file.filename;
+    }
+
+    const cab = await Cab.findByIdAndUpdate(req.params.id, updates, {
       new: true,
       runValidators: true,
     });
